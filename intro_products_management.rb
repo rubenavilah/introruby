@@ -12,11 +12,11 @@ products = ["Negan",
   "Chompiraz"
 ]
 products_characteristics = {}
-products.each do |p|
+products.each_with_index do | p, i |
   products_characteristics[p] = {
     cost: 10,
     color: "undefined",
-    index: nil
+    index_product: i
   }
 end
 shopping_car = {}
