@@ -1,5 +1,5 @@
-operation = "+"
-until operation == "exit".upcase
+operation = nil
+until operation == "exit".downcase
 
   puts "RB Calculator"
   puts "The first number"
@@ -8,7 +8,7 @@ until operation == "exit".upcase
   opt2 = gets.chomp.to_f
 
   puts "Type your operating (sum, rest, mult, div, pow)"
-  operation = gets.chomp
+  operation = gets.chomp.downcase
   puts "la operacion es #{opt1} #{operation} #{opt2}"
   puts opt1.class.name
   puts opt2.class.name
