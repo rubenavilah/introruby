@@ -14,7 +14,7 @@ products = ["Negan",
 products_characteristics = {}
 products.each_with_index do | p, i |
   products_characteristics[p] = {
-    cost: 10,
+    cost: 1 + rand(10),
     color: "undefined",
     index_product: i
   }
